@@ -1,0 +1,27 @@
+{
+  "name": "matrix-fx",
+  "version": "1.0.0",
+  "description": "Matrix (movie) effect using CSS3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raphaklaus/matrix-fx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaklaus/matrix-fx/issues"
+  },
+  "homepage": "https://github.com/raphaklaus/matrix-fx",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.9.1",
+    "browser-sync": "^2.11.1",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-stylint": "^3.0.0",
+    "gulp-stylus": "^2.3.0"
+  },
+  "dependencies": {}
+}

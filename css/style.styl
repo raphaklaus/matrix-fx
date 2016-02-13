@@ -1,0 +1,225 @@
+$green-color = #1DE61D
+
+body
+  background-color: black
+  overflow: hidden
+
+@keyframes doTheMatrix
+  0%
+    color: white
+    opacity: 1
+  15%
+    color: green
+  80%
+    opacity: 0
+
+h1, h2, h3, h4
+  color: $green-color
+  font-family: 'Makinas-Scrap-5'
+  left: 10%
+  letter-spacing: 10px
+  position: absolute
+  top: 0
+  white-space: nowrap
+  writing-mode: vertical-lr
+
+.col1
+  color: $green-color
+  left: 4.5%
+  position: absolute
+  top: 0
+
+.col2
+  color: $green-color
+  left: 5%
+  position: absolute
+  text-orientation: upright
+  top: 0
+
+.col3
+  color: $green-color
+  left: 15%
+  position: absolute
+  text-orientation: upright
+  top: 0
+  
+.col4
+  color: $green-color
+  left: 24%
+  position: absolute
+  top: 0
+
+.col5
+  color: $green-color
+  left: 25%
+  position: absolute
+  top: 0
+
+.col6
+  color: $green-color
+  left: 26%
+  position: absolute
+  top: 0
+
+.col7
+  color: $green-color
+  left: 30%
+  position: absolute
+  top: 0
+  
+.col8
+  color: $green-color
+  left: 35%
+  position: absolute
+  top: 0
+  
+.col9
+  color: $green-color
+  left: 45%
+  position: absolute
+  top: 0
+
+.col10
+  color: $green-color
+  left: 46%
+  position: absolute
+  top: 0
+
+.col11
+  color: $green-color
+  left: 50%
+  position: absolute
+  top: 0
+
+.col12
+  color: $green-color
+  left: 55%
+  position: absolute
+  top: 0
+  
+.col13
+  color: $green-color
+  left: 65%
+  position: absolute
+  top: 0
+
+.col14
+  color: $green-color
+  left: 73%
+  position: absolute
+  top: 0
+
+.col15
+  color: $green-color
+  left: 75%
+  position: absolute
+  top: 0
+  
+.col16
+  color: $green-color
+  left: 85%
+  position: absolute
+  top: 0
+
+.col1 > span
+.col2 > span
+.col3 > span
+.col4 > span
+.col5 > span
+.col6 > span
+.col7 > span
+.col8 > span
+.col9 > span
+.col10 > span
+.col11 > span
+.col12 > span
+.col13 > span
+.col14 > span
+.col15 > span
+.col16 > span
+  animation-iteration-count: infinite
+  animation-name: doTheMatrix
+  animation-timing-function: linear
+  opacity: 0
+
+for num in (1..36)
+  .col1 > .char{num}
+    animation-delay: .1 + (num / 10) s
+    animation-duration: 3s
+
+for num in (1..36)
+  .col2 > .char{num}
+    animation-delay: .4 + (num / 10) s
+    animation-duration: 3s
+    
+for num in (1..36)
+  .col3 > .char{num}
+    animation-delay: .9 + (num / 10) s
+    animation-duration: 1.5s
+    
+for num in (1..36)
+  .col4 > .char{num}
+    animation-delay: 2.3 + (num / 10) s
+    animation-duration: 2s
+    
+for num in (1..36)
+  .col5 > .char{num}
+    animation-delay: .8 + (num / 10) s
+    animation-duration: 2s
+    
+
+for num in (1..36)
+  .col6 > .char{num}
+    animation-delay: 3.2 + (num / 10) s
+    animation-duration: 2.1s
+
+for num in (1..36)
+  .col7 > .char{num}
+    animation-delay: 2 + (num / 10) s
+    animation-duration: 1.8s
+    
+for num in (1..36)
+  .col8 > .char{num}
+    animation-delay: 3 + (num / 10) s
+    animation-duration: 2.8s
+    
+for num in (1..36)
+  .col9 > .char{num}
+    animation-delay: 1.5 + (num / 10) s
+    animation-duration: 1.3s
+
+for num in (1..36)
+  .col10 > .char{num}
+    animation-delay: 4.5 + (num / 10) s
+    animation-duration: 1.9s
+    
+for num in (1..36)
+  .col11 > .char{num}
+    animation-delay: 4 + (num / 10) s
+    animation-duration: 2.7s
+    
+for num in (1..36)
+  .col12 > .char{num}
+    animation-delay: 1.7 + (num / 10) s
+    animation-duration: 3.5s
+    
+for num in (1..36)
+  .col13 > .char{num}
+    animation-delay: .1 + (num / 10) s
+    animation-duration: 3.1s
+    
+for num in (1..36)
+  .col14 > .char{num}
+    animation-delay: 2.7 + (num / 10) s
+    animation-duration: 3.8s
+           
+    
+for num in (1..36)
+  .col15 > .char{num}
+    animation-delay: .7 + (num / 10) s
+    animation-duration: 4s
+    
+for num in (1..36)
+  .col16 > .char{num}
+    animation-delay: 2.7 + (num / 10) s
+    animation-duration: 5s
