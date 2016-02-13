@@ -1,2 +1,2 @@
 # matrix-fx
-Matrix (movie) effect using CSS3
+Matrix (movie) digital rain effect using CSS3
