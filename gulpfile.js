@@ -1,7 +1,8 @@
 var gulp = require('gulp');
 var stylus = require('gulp-stylus');
 var browserSync = require('browser-sync');
-var autoprefixer = require('autoprefixer-stylus')
+var autoprefixer = require('autoprefixer-stylus');
+var minifyCss = require('gulp-minify-css');
 var gulpStylint = require('gulp-stylint');
 var reload = browserSync.reload;
 
@@ -28,8 +29,14 @@ gulp.task('compile-css', function(){
     .pipe(reload({stream:true}));
 });
 
+gulp.task('dist', function(){
+  return gulp.src('./css/build/style.css')
+    .pipe(minifyCss())
+    .pipe(gulp.dest('./css/build/'));
+});
+
 gulp.task('watch', function(){
-  gulp.watch('./css/style.styl', ['compile-css']);
+  gulp.watch('./css/style.styl', ['compile-css', 'dist']);
   gulp.watch('./index.html', ['browser-sync']);
 });
 
