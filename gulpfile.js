@@ -5,6 +5,11 @@ var autoprefixer = require('autoprefixer-stylus');
 var minifyCss = require('gulp-minify-css');
 var gulpStylint = require('gulp-stylint');
 var reload = browserSync.reload;
+var del = require('del');
+
+gulp.task('clean', function(){
+  return del(['build']);
+});
 
 gulp.task('browser-sync', function(){
   browserSync({
@@ -18,7 +23,7 @@ gulp.task('refresh-browser', function(){
   reload({stream:true});
 })
 
-gulp.task('compile-css', function(){
+gulp.task('compile-css', ['clean'], function(){
   return gulp.src('./css/style.styl')
     .pipe(gulpStylint())
     .pipe(gulpStylint.reporter())
